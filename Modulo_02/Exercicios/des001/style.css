@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+:root{
+    --font1:"Sriracha", serif;
+    --font2:  "Passion One", serif;
+    --font3:"Amatic SC", serif;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -9,6 +20,8 @@ html,body{
     min-height: 100vh;
     /*vh ou % daria no msm*/
     background-color: darkgray;
+    font-family: var(--font1);
+    font-size: 1em;
     
 }
 header{
@@ -18,6 +31,8 @@ header{
 
 }
 header>h1{
+    font-size: 4em;
+    font-family: var(--font2);
     padding-top: 50px;
     font-variant: small-caps;
     /*font-variante server para deixar as lentras maisculas as primeiras letras sao maiores*/
@@ -49,6 +64,7 @@ section{
     line-height: 2em;
     /*line-height espacamento das letras*/
     padding-left: 30px;
+    font-family: var(--font1);
 
 }
 section.normal{
@@ -57,12 +73,14 @@ section.normal{
 
 }
 section.imagen{
+    font-family: var(--font3);
+    font-weight: bold;
     background-color: rgb(109, 109, 109);
     color: white;
 
 }
 section.imagen>p{
-    width: 50%;
+    width: 200px;
     background-color: rgb(170, 169, 169);
     padding: 10px;
     
