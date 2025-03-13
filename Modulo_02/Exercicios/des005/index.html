@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio-05</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+
     <link rel="stylesheet" href="estilos/style.css" media="all">
+
+    <link rel="stylesheet" href="estilos/02style.css">
 </head>
-<body>
+<body onresize="tamanhotela()">
+    <!--O onresize vai verificar o tamanho da tela-->
     <header>
         <h1>Meu site
         </h1>
@@ -39,6 +43,14 @@
 
     </footer>
     <script>
+        function tamanhotela(){
+            if(window.innerWidth>=768){
+                //nesse caso estou dizendo que se o tamanho da tela for maior ou igual a 768
+                tela.style.display='block'
+            }else{
+                tela.style.display='none'
+            }
+        }
         function mostrar(){
             if (tela.style.display == 'block'){
                 tela.style.display='none'
