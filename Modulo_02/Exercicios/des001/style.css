@@ -19,7 +19,7 @@
 }
 html,body{
     min-height: 100vh;
-    /*vh ou % daria no msm*/
+    
     background-color: darkgray;
     font-family: var(--font1);
     font-size: 1em;
